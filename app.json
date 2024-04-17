@@ -1,111 +1,38 @@
 {
   "name": "asta7780",
-  "description": "تم تطرير البوت بواسطه آس؁تــا ♥️",
-  "logo": "https://telegra.ph/file/274d9b0ac4baf92a95c15.png",
-  "keywords": ["nodejs", "bot"],
-  "success_url": "/",
-  "stack": "container",
-"env": {
-  "OWNER_NAME": {
-  "description": "اسم المطور",
-      "value": "آس؁تــا"
-  },
-    "AUTO_STATUS_SAVER": {
-      "description": "لا تغيره.",
-       "required" :false
-      },
-	"AUTO_STATUS_READER": {
-      "description": "لا تغيره .",
-       "required" :false
-      },
-    "HEROKU_API_KEY": {
-    "description": "مفتاح هيروكو",
-     "required" :false
+  "website": "https://github.com/asta7780",
+  "description": "Subscribete a The Shadow Borkers - Bot (≧▽≦)",
+  "repository": "https://github.com/asta7780/asta7780",
+  "logo": "https://raw.githubusercontent.com/BrunoSobrino/asta7780/master/src/pictures/heroku-icon.jpg",
+  "success_url": "https://github.com/asta7780/asta7780",
+  "keywords": [
+    "nodejs",
+    "heroku",
+    "bot",
+    "bots",
+    "bot",
+    "spanish",
+    "whatsapp",
+    "termux",
+    "shadow",
+    "multi-device",
+    "md",
+    "whatsappbot",
+    "oficial",
+    "whatsapp-md",
+    "themysticbot",
+    "themystic-bot",
+    "themystic-bot-md"],
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
     },
- "HEROKU_APP_NAME": {
-    "description": "اسم التطبيق اللي كتبته بالاول.",
-    "required": "true"
-},
-   "THUMB_IMAGE": {
-    "description": "صوره البوت.",
-     "value": "https://telegra.ph/file/274d9b0ac4baf92a95c15.png"
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
-    "ANTI_BAD_WORD": {
-    "description": "لا تغيره",
-     "required" :false
-    },
-   "ANTILINK_VALUES": {
-    "description": "لا تغيره",
-     "value": "fchat.whatsapp.com,fb.com,instagram.com,wa.me,youtube.com",
-     "required" :false
-    },
-     "ANTILINK_ACTION": {
-    "description": "لا تغيره",
-     "value": "remove",
-     "required" :false
-    },
-  "LEVEL_UP_MESSAGE": {
-    "description": "ارتفاع المستوي تلقائي اذا تبي تشغله خليه true.",
-     "required" :false,
-     "value": "false"
-    },
-      "READ_MESSAGE": {
-    "description": "لا تغيره.",
-     "required" :true,
-     "value": "true"
-    },
-   "DISABLE_PM": {
-    "description": "لا تغيره",
-     "required" :false
-    },
-      "PREFIX": {
-  "description": "بادئه البوت.",
-      "value": "."
-  },
-  "OWNER_NUMBER": {
-    "description": "رقم المطور يمكن اضافه اكثر من مطور وافصلهم بـ \",\")",
-       "value": "9"
-  },
-   "SESSION_ID": {
-    "description": "كود الجلسه احصل عليه من هنا"
-  },
-    "OPENAI_API_KEY": {
-    "description": "لا تغيره ",
-       "value": "false",
-       "required" :false
-  },
-  "MONGODB_URI": {
-    "description": "رابط مونجو اذا ما تعرفه اتركه كما هو",
-    "value": "mongodb+srv://KING-MDBOT:KING-MDBOT@cluster0.ltjjfkx.mongodb.net/?retryWrites=true&w=majority"
-  },
-    "THEME": {
-    "description": "اتركه كما هو",
-     "value": "SHADOW"
-  },
-    "WORKTYPE": {
-  "description": "اذا تبي البوت عام. اكتب public واذا تبيه خاص اكتب private.",
-         "value": "public"
-  },
-      "AUTO_REACTION": {
-    "description": "تفاعل تلقائي علي كل الرسائل.",
-     "value": "false",
-     "required": false 
-  },
-  "PACK_INFO": {
-    "description": "حقوق الملصقات.",
-     "value": "SHADOW",
-     "required": false 
-  },
-  "heroku": {
-    "description": "اتركه كما هو",
-     "value": "true",
-     "required": false 
-  }
-},
-"formation": {
-		"worker": {
-			"quantity": 1,
-			"size": "basic"
-		}
-	}
+    {
+      "url": "https://github.com/bogini/heroku-buildpack-graphicsmagick"
+    }    
+ ]
 }
